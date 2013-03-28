@@ -36,3 +36,7 @@ end
 
 # To use debugger
 # gem 'debugger'
+
+gem 'pry'
+gem 'neoid', '~> 0.1.1'
+
