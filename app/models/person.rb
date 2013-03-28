@@ -20,6 +20,11 @@ class Person < ActiveRecord::Base
   end
 
   def relates(args)
+    if args[:to].kind_of?(Person) && args[:as].kind_of?(Symbol)
+      related_object = args[:to]
+      relationship_type = "is_#{args[:as]}_of"
+      Neography::Relationship.create relationship_type, self.neo_node, related_object.neo_node
+    end
   end
   
   include Neoid::Node
