@@ -6,6 +6,8 @@ This demonstration should be understood as a continuation and extension of the d
 
 ## Setup
 
+**Please note**: If you have first tried the [neography_test](https://github.com/fiedl/neography_test) script, make sure that you have stopped the neo4j server there: `cd ../neography_test && bundle exec rake neo4j:stop`.
+
 Download and install this test script like this:
 
 ```bash
@@ -18,6 +20,7 @@ bundle exec rake neo4j:start
 ```
 
 This will install neo4j and start a database server in the background.
+
 
 ## Script Versions
 
