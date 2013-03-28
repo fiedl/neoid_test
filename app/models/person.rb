@@ -18,6 +18,9 @@ class Person < ActiveRecord::Base
   def name=(name)
     @name = name
   end
+
+  def relates(args)
+  end
   
   include Neoid::Node
   neoidable do |c|
